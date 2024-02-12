@@ -1,5 +1,5 @@
 function insertionSortReverse(array) {
-  // Iterate through the array from the second-to-last element down to the first.
+  // Iterating through the array from the second-to-last element down to the first.
   for (var i = array.length - 2; i >= 0; i--) {
     var val = array[i];
     var j;
@@ -7,7 +7,7 @@ function insertionSortReverse(array) {
     for (j = i; j < array.length - 1 && array[j + 1] < val; j++) {
       array[j] = array[j + 1];
     }
-    // Insert the value at the correct position.
+    // Ensure value is inserted at the correct position.
     array[j] = val;
   }
   return array;
