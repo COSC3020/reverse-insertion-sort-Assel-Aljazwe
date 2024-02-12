@@ -37,3 +37,11 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+## Reasoning and Conclusion
+
+Insertion sort has an average-case complexity of $\Theta(n^2)$. This average case is reliant on the number of comparisons needed to place every element into its correct sorted position. As the sorting progresses, each element is compared to those that were previously sorted to find where the element fits. So in general, an element might need to be compared to about half of the elements that were already sorted on average because the unsorted element could belong at the start, end or maybe even the middle of the sorted section.
+
+If we take an example, when sorting the third element, it usually gets compared to one or two of the previously sorted elements. As more elements are added to be sorted, the number of comparisons needed for each new element increases, since the sorted portion of the array grows.
+
+Adding up all these comparisons needed across the entire array, the total number of operations required rises sharply with the array's size. Thus resulting in the average sorting time growing in proportion to the square of the number of elements (n<sup>2</sup>). Therefore, the average-case complexity for the Insertion Sort algorithm is $\Theta(n^2)$, showing that the time it takes to sort the array grows much faster than the size of the array. So as you add more elements to sort, the amount of work required to do this goes up a lot, making it take much longer to sort bigger arrays.
